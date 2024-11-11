@@ -1,4 +1,4 @@
-//import React, { useState } from "react";
+import React, { useState } from "react";
 import styles from "./About.module.css";
 import { getImageUrl } from "../../utils";
 
@@ -9,8 +9,7 @@ export const About = () => {
       <h2 className={styles.title}> About </h2>
       <image className={styles.Codeimage} 
       src= {getImageUrl("about/code.png")}
-      alt="image of coding">
-      </image>
+      alt="image of coding"/>
       </section>
       <div className={styles.content}>
       <ul className={styles.items}>
