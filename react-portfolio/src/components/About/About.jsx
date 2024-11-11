@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import styles from "./About.module.css";
 import { getImageUrl } from "../../utils";
 
 
-// TODO : Fix image not loading
 
 export const About = () => {
+
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="about">
       <section className={styles.secleft}>
         <h2 className={styles.title}> About </h2>
         <img className={styles.Codeimage} 

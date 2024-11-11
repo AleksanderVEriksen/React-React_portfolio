@@ -4,7 +4,7 @@ import { getImageUrl } from "../../utils";
 
 export const Profile = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="profile">
       <div className={styles.textcontainer}>
         <h1 className={styles.title}> Hello im Aleksander</h1>
         <p className={styles.description}>

@@ -12,11 +12,22 @@
     margin-left: 5%;
 }
 
+.sourceTitle{
+    font-size: 18px;
+    margin: 10px 0 10px 0;
+    text-decoration: underline;
+}
+
 .rslinks{
     list-style-type: none;
+    margin: 0 0 5px 0px;
 }
 
 .rslinks a{
-    text-decoration: underline;
+    text-decoration: none;
     color: white;
+}
+.rslinks a:hover{
+    text-decoration: underline;
+    color: green;
 }
