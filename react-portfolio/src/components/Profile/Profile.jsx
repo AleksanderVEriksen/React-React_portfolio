@@ -19,7 +19,7 @@ export const Profile = () => {
       </div>
       <img
         className={styles.myimage}
-        src={getImageUrl("about/søknadBilde_grå.png")}
+        src={getImageUrl("profile/søknadBilde_grå.png")}
         alt="Myimage"
       ></img>
       <div className={styles.topBlur} />

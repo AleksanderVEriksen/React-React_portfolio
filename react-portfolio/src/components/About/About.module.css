@@ -9,36 +9,45 @@
     display: flex;
     align-items: center;
     z-index: 1;
-    margin-left: 10%;
-    
     flex-direction: row;
 }
 
 .secleft{
-    display: flex;
-    flex-direction: column;
+    margin-left: 5%;  
 }
 
 .title{
     text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 5%;
 }
 
 .Codeimage{
-    height: 500px;
-    width: 500px;
+    width: 80%;
     z-index: 1;
+    margin-bottom: 5%;
 }
 
 .items{
-    flex-direction: column;  
+    flex-direction: column; 
+     
+}
+
+.itemTitle{
+    font-size: 32px;
 }
 
 .item{
     flex-direction: row;
     list-style: none;
     margin-bottom: 5%;
+    margin: 5% 5% 5% 0;    /* Top right bottom left */
+}
+
+.aboutIcons{
+    width: 5%;
 }
 
 .aboutinfo{
-    
+    font-size: 24px;
 }

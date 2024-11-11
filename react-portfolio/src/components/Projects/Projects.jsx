@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import styles from "./Experience.module.css";
+import styles from "./Projects.module.css";
 import { getImageUrl } from "../../utils";
 
 
-export const Experience = () => {
+export const Projects = () => {
     return (
         <section className={styles.container}>
             <h1> Hello </h1>
