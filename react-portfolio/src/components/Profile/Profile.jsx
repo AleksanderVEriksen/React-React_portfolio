@@ -13,7 +13,7 @@ export const Profile = () => {
           culpa! Labore iste minus minima accusantium tempore. Voluptas placeat
           inventore eaque.
         </p>
-        <a className={styles.contactbtn} href="mailto:myemail@email.com">
+        <a className={styles.contactbtn} href="mailto:eriksen1998@live.no">
           Contact me
         </a>
       </div>
