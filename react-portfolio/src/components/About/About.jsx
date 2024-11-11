@@ -5,11 +5,13 @@ import { getImageUrl } from "../../utils";
 export const About = () => {
   return (
     <section className={styles.container}>
+        <section className={styles.secleft}>
       <h2 className={styles.title}> About </h2>
       <image className={styles.Codeimage} 
-      src= {getImageUrl("about/code_image.jpg")}
+      src= {getImageUrl("about/code.png")}
       alt="image of coding">
       </image>
+      </section>
       <div className={styles.content}>
       <ul className={styles.items}>
         <li className={styles.item}>
