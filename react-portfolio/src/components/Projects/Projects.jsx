@@ -2,11 +2,16 @@ import React, { useState } from "react";
 import styles from "./Projects.module.css";
 import { getImageUrl } from "../../utils";
 
-
 export const Projects = () => {
-    return (
-        <section className={styles.container} id="projects">
-            <h1> Hello </h1>
-        </section>
-    )
-}
+  return (
+    <section className={styles.container} id="projects">
+      <h1> Hello </h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. In,
+        doloremque. Recusandae cumque quasi ut neque doloribus voluptate
+        aspernatur beatae mollitia excepturi, nostrum ad, unde in necessitatibus
+        eius, fuga officia ipsum?
+      </p>
+    </section>
+  );
+};
