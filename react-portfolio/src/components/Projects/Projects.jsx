@@ -5,7 +5,7 @@ import { getImageUrl } from "../../utils";
 export const Projects = () => {
   return (
     <section className={styles.container} id="projects">
-      <h1> Hello </h1>
+      <h1> Projects </h1>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. In,
         doloremque. Recusandae cumque quasi ut neque doloribus voluptate

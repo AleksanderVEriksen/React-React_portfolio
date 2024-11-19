@@ -52,6 +52,18 @@ export const About = () => {
               </p>
             </div>
           </li>
+          <li className={styles.item}>
+            <img className={styles.aboutIcons} src={getImageUrl("about/gym.png")} alt=""></img>
+            <div className={styles.aboutinfo}>
+              <h3 className={styles.itemTitle}> Gym </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis, a odio, suscipit impedit natus ducimus nihil facere
+                aperiam labore cupiditate reiciendis est! Deleniti nostrum
+                asperiores reiciendis animi aut earum in?
+              </p>
+            </div>
+          </li>
         </ul>
       </div>
     </section>

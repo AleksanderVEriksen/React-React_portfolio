@@ -47,7 +47,13 @@
     width: 5%;
 }
 
-.aboutinfo{
+.aboutinfo p:hover{
+    background-color: var(--color-dark);
+
+}
+
+.aboutinfo p{
+    margin-top: 2%;
     font-size: 18px;
 }
 
