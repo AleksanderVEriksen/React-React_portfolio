@@ -68,10 +68,10 @@
     }
     .title{
         display: flex;
-        justify-content:left;
-        align-items: flex-start;
+        justify-content: center;
     }
     .items{
         margin-left: 5%;
     }
+    
 }
