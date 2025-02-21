@@ -34,12 +34,15 @@ export const About = () => {
 
     <section className={styles.container} id="about">
       <section className={styles.secleft}>
-        <h2 className={styles.title}> About </h2>
         {
           code_image.map((code, id) =>{return(
+            <div className={styles.codeImagecontainer}>
+            <h2 className={styles.title}> About </h2>
           <img key={id} className={styles.Codeimage} 
             src= {(code.image_path)}
-            alt="image of coding"/>)})
+            alt="image of coding"/>
+            </div>
+            )})
           }
       </section>
       <div className={styles.content}>
