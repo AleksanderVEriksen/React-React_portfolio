@@ -1,0 +1,27 @@
+[
+    {
+        "role":"Student assistant",
+        "organization":"HIOF",
+        "startDate":"January 2024",
+        "endDate":"May 2024",
+        "experiences":["Assisted students in course Parallel Programming", "Java programming","Github & Discord"],
+        "imageSrc":"Experience/hiof.png"
+    },
+    {
+        "role":"Student assistant",
+        "organization":"HIOF",
+        "startDate":"August 2023",
+        "endDate":"December 2023",
+        "experiences":["Assisted students in course Introduction to OS", "C and Bash programming","Github & Discord"],
+        "imageSrc":"Experience/hiof.png"
+    },
+    {
+        "role":"Student assistant",
+        "organization":"HIOF",
+        "startDate":"January 2022",
+        "endDate":"May 2022",
+        "experiences":["Assisted students in course Parallel Programming", "Java programming","Github & Discord"],
+        "imageSrc":"Experience/hiof.png"
+    }
+ 
+]
