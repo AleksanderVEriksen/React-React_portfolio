@@ -1,8 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Profile.module.css";
 import { getImageUrl } from "../../utils";
+import axios from 'axios';
 
 export const Profile = () => {
+
+  const [profile, setProfile] = useState([]);
+
+  // Using the useState hook to create 'selectedItem' state to store the item selected by the user
+  // Initially, 'selectedItem' is null, indicating no item is selected
+
+  // Using the useEffect hook to perform a side effect (data fetching) when the component mounts
+  useEffect(() => {
+      // Making a GET request to the server to fetch items
+      axios.get('http://localhost:3308/profile')
+          .then(response => {
+              // On successful fetch, update the 'items' state with the fetched data
+              setProfile(response.data);
+          })
+          .catch(error => {
+              // If there is an error during fetch, log it to the console
+              console.error('Error fetching items:', error);
+          });
+  }, []); // The empty dependency array ensures this effect runs only once after the component mounts
+
+
+
   return (
     <section className={styles.container} id="profile">
       <div className={styles.textcontainer}>
@@ -17,11 +40,12 @@ export const Profile = () => {
           Contact me
         </a>
       </div>
-      <img
-        className={styles.myimage}
-        src={getImageUrl("profile/søknadBilde_grå.png")}
-        alt="Myimage"
+      {
+      profile.map((profile, id) =>{
+        return (
+      <img className={styles.myimage} key={id} src={profile.image_path} alt="Myimage"
       ></img>
+      )})}
       <div className={styles.topBlur} />
       <div className={styles.bottomBlur} />
     </section>
