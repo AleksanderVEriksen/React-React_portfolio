@@ -1,0 +1,163 @@
+@import "../../vars.css";
+
+.container{
+    background-color: var(--color-bg);
+    margin-top: 10px;
+    color: var(--color-text);
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 1; 
+    flex-direction: column;
+}
+
+.container h2{
+    margin-left: 5%;
+}
+
+.secleft{
+    margin-left: 5%;
+    display: flex;  
+}
+
+.title{
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 5%;
+}
+
+.items{
+    display: flex;
+    flex-direction: row; 
+    list-style: none;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 2%;
+    width: 50%;
+}
+
+.item{
+    width: 30%;
+}
+
+.itemcontainer{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+}
+
+.itemTitle{
+    font-size: 18px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.icons{
+    width: 80%;
+    background-color: var(--color-secondary);
+    border-radius: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutinfo{
+    font-size: 18px;
+}
+
+.history{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.historyItem{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #19376d;
+    background: linear-gradient(90deg, #19376d 0%, rgba(25,55,109,0)100%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.historyItem a{
+    width: 20%;
+    margin-right: 10px;
+}
+
+.historyItem a img{
+    width: 80%;  
+}
+
+.historyItem a img:hover{
+    cursor: pointer;
+}
+
+.historyItemDetail{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+
+.historyItemDetail{
+    display: flex;
+    flex-direction: column;
+}
+
+.historyItemDetail h3{
+    font-size: 30px;
+    font-weight: 500;
+    
+}
+
+.historyItemDetail p{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.historyItemDetail ul{
+    list-style-position: inside;
+    margin-top: 6px;
+    font-size: 18px;
+    list-style-type: disc;
+}
+
+@media screen  and (min-width: 830px) and (max-width: 1400px) {
+
+    .item{
+        width: 40%;
+    }
+    .secleft{
+        flex-direction: row;
+    }
+}
+
+@media screen  and (max-width: 830px) {
+    .secleft{
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .items{
+        width: 100%;
+        flex-direction: row;
+        margin-top: 5%;
+    }
+    .item{
+        width: 20%;
+    }
+    .history{
+        width: 100%;
+        gap: 9px;
+        flex-direction: row;  
+    }
+}
