@@ -78,7 +78,7 @@ app.get('/projects', (req, res) => {
   })
 });
 
-// Start the server and listen on port 3307
+// Start the server and listen on port 3308
 app.listen(3308, () => {
   console.log("listening");
 });

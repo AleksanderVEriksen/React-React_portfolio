@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Experience.module.css";
-//import skills from "../../skills.json"
-import { getImageUrl } from "../../utils";
-import history from "../../history.json"
 import axios from 'axios';
 import moment from "moment";
 

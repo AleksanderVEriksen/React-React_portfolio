@@ -22,13 +22,14 @@
 }
 
 .Codeimage{
-    width: 80%;
+    width: 50%;
     z-index: 1;
     margin-bottom: 5%;
     border-radius: 20%;
 }
 
 .items{
+    display: flex;
     flex-direction: column; 
 }
 
@@ -44,12 +45,11 @@
 }
 
 .aboutIcons{
-    width: 5%;
+    width: 25%;
 }
 
 .aboutinfo p:hover{
     background-color: var(--color-dark);
-
 }
 
 .aboutinfo p{

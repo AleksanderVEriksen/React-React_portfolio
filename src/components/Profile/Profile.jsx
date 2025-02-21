@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Profile.module.css";
-import { getImageUrl } from "../../utils";
 import axios from 'axios';
 
 export const Profile = () => {
@@ -24,8 +23,6 @@ export const Profile = () => {
           });
   }, []); // The empty dependency array ensures this effect runs only once after the component mounts
 
-
-
   return (
     <section className={styles.container} id="profile">
       <div className={styles.textcontainer}>
@@ -43,7 +40,9 @@ export const Profile = () => {
       {
       profile.map((profile, id) =>{
         return (
-      <img className={styles.myimage} key={id} src={profile.image_path} alt="Myimage"
+      <img key = {id}  className={styles.myimage} 
+      src = {(profile.image_path)}
+      alt="Myimage"
       ></img>
       )})}
       <div className={styles.topBlur} />
