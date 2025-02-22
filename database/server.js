@@ -26,7 +26,7 @@ db.connect((err) => {
   console.log('Connected to MySQL as ID ' + db.threadId);
 
 
-
+/*
   app.get('*.js', (req, res) => {
     // Set the correct content type for .js files
     res.setHeader('Content-Type', 'application/javascript');
@@ -38,7 +38,7 @@ db.connect((err) => {
     res.setHeader('Content-Type', 'application/javascript');
     res.sendFile(path.join(__dirname, req.url));
   });
-
+ */
 
 
 
