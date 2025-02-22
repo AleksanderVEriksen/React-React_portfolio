@@ -6,12 +6,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "main -d build",
-    "build": "webpack",
-    "start": "webpack serve --open"
+    "deploy": "main -d build"
   },
   "dependencies": {
     "@fontsource/outfit": "^5.1.0",
