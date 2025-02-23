@@ -45,4 +45,4 @@ jobs:
         run: |
           git add public
           git commit -m "Deploy to GitHub Pages" || echo "No changes to commit"
-          git push origin `git subtree split --prefix public HEAD`:gh-pages --force
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/AleksanderVEriksen/React-React_portfolio.git `git subtree split --prefix public HEAD`:gh-pages --force
