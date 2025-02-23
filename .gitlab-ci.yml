@@ -12,6 +12,7 @@ pages:
     - npm install
     - npm run build
     - cp -a dist/. public/
+    - echo 'www.aleksanderveriksen.no' > public\CNAME
     - git config --global user.email "eriksen1998@live.no"
     - git config --global user.name "Aleksander"
     - git add public
