@@ -8,7 +8,6 @@
     "dev": "vite",
     "build": "vite build && echo 'aleksanderveriksen.no' > dist/CNAME",
     "start": "vite",
-    "copy-deploy": "copyfiles .github/workflows/deploy.yml dist/",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",

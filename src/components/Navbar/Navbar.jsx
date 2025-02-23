@@ -33,12 +33,6 @@ export const Navbar = () => {
             .then(data => setNav(data))
             .catch(error => {console.error('Error fetching items:', error)});
     }, []); // The empty dependency array ensures this effect runs only once after the component mounts
-  
-    
-    useEffect(() => {
-        console.log(nav); // This will log the updated value of 'nav'
-    }, [nav]);
-
 
     return (
         <nav className={styles.navbar}> 
