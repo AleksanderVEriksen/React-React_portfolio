@@ -32,11 +32,15 @@ export const Navbar = () => {
             fetch('http://localhost:3308/nav')
             .then(response => response.json())
             .then(data => setNav(data))
-            .then(console.log(nav))
             .catch(error => {console.error('Error fetching items:', error)});
     }, []); // The empty dependency array ensures this effect runs only once after the component mounts
   
     
+    useEffect(() => {
+        console.log(nav); // This will log the updated value of 'nav'
+    }, [nav]);
+
+
     return (
         <nav className={styles.navbar}> 
             <a className={styles.title} 
@@ -44,15 +48,14 @@ export const Navbar = () => {
                 >
                 Portfolio</a>  
                 <div className={styles.menu}>
-                    <img className={styles.menubtn} 
-                        src= {
-                             menuOpen 
-                                ? getImageUrl("nav/delete.png") 
-                                : getImageUrl("nav/bar.png")
-                            }
-                        alt = "menu-button"
+                {nav.length >= 2 && (
+                    <img
+                        className={styles.menubtn}
+                        src={menuOpen ? nav[1].image_path : nav[0].image_path}
+                        alt="menu-button"
                         onClick={() => setMenuOpen(!menuOpen)}
                     />
+                    )}
                     <ul className={`${styles.menuitems} ${menuOpen && styles.menuOpen}`}
                             onClick={() => setMenuOpen(false)}>
                         <li>
