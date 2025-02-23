@@ -6,6 +6,20 @@ const cors = require('cors'); // For web security
 
 
 const app = express();
+
+
+
+app.use(express.static('public', {
+  setHeaders: (res, path) => {
+    if (path.endsWith('.jsx')) {
+      res.set('Content-Type', 'application/javascript');
+    }
+  }
+}));
+
+
+
+
 app.use(cors());
 
 let defaultport = 3307;
