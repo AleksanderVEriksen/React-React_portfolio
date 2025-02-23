@@ -61,5 +61,6 @@ export const About = () => {
           </ul>
         </div>
     </section>
+    
 );
 };

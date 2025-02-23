@@ -75,7 +75,6 @@
         display: block;
         cursor: pointer;
         width: 20%;
-        margin: -20px;
     }
     .menuitems{
         display: none;
@@ -94,7 +93,5 @@
     .menuOpen{
         display: flex;
         z-index: 1;
-        margin-top: 47px;
-        margin-right: -65px;
     }
 }   
