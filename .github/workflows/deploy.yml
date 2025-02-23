@@ -1,0 +1,42 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Change this to your default branch if different
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'  # Specify the Node.js version you need
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build the project
+        run: npm run build  # Adjust this command based on your project setup
+
+      - name: Copy build files to public directory
+        run: cp -a build/. public/  # Adjust this if your build output is in a different directory
+
+      - name: Create CNAME file
+        run: echo 'www.aleksanderveriksen.com' > public/CNAME  # Replace with your custom domain
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "eriksen1998@live.no"
+          git config --global user.name "Aleksander"
+
+      - name: Deploy to GitHub Pages
+        run: |
+          git add public
+          git commit -m "Deploy to GitHub Pages" || echo "No changes to commit"
+          git push origin `git subtree split --prefix public HEAD`:gh-pages --force
