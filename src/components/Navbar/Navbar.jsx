@@ -5,6 +5,7 @@ import {getImageUrl} from "../../utils";
 /* <script src="http://localhost:8097"></script> --  script to react-devtools (command in terminal) */
 
 export const Navbar = () => {
+    const [nav, setNav] = useState([]);
 
     const [menuOpen, setMenuOpen] = useState(false);
     const [top, settop] = useState(true);
@@ -25,6 +26,16 @@ export const Navbar = () => {
     })};
 
     window.addEventListener("scroll", checkTopView)
+
+
+    useEffect(() => {
+            fetch('http://localhost:3308/nav')
+            .then(response => response.json())
+            .then(data => setNav(data))
+            .then(console.log(nav))
+            .catch(error => {console.error('Error fetching items:', error)});
+    }, []); // The empty dependency array ensures this effect runs only once after the component mounts
+  
     
     return (
         <nav className={styles.navbar}> 

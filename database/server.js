@@ -45,6 +45,15 @@ app.get('/', (req, res) => {
   return res.json("From backend side");
 });
 
+app.get('/nav', (req, res) => {
+  const sql = "select * from my_db.nav"; // SQL query to select all items
+  
+  db.query(sql, (err, data) => { // Execute the SQL query
+      if (err) return res.json(err); // If there's an error, return the error
+      return res.json(data); // Otherwise, return the data as JSON
+  })
+});
+
 app.get('/profile', (req, res) => {
   const sql = "select * from my_db.profile"; // SQL query to select all items
   
