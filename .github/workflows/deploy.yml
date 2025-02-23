@@ -37,7 +37,7 @@ jobs:
         run: cp -a dist/. public/  # Adjust this if your build output is in a different directory
 
       - name: Create CNAME file
-        run: echo 'www.aleksanderveriksen.com' > public/CNAME  # Replace with your custom domain
+        run: echo 'aleksanderveriksen.no' > public/CNAME  # Replace with your custom domain
       
       # Email if fail
       - name: Configure Git
