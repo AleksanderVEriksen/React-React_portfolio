@@ -10,19 +10,13 @@ export const Profile = () => {
   // Initially, 'selectedItem' is null, indicating no item is selected
 
   // Using the useEffect hook to perform a side effect (data fetching) when the component mounts
+  
   useEffect(() => {
-      // Making a GET request to the server to fetch items
-      axios.get('http://localhost:3308/profile')
-          .then(response => {
-              // On successful fetch, update the 'items' state with the fetched data
-              setProfile(response.data);
-          })
-          .catch(error => {
-              // If there is an error during fetch, log it to the console
-              console.error('Error fetching items:', error);
-          });
-  }, []); // The empty dependency array ensures this effect runs only once after the component mounts
-
+    fetch('http://localhost:3308/profile')
+      .then(response => response.json())
+      .then(data => setProfile(data))
+      .catch(error => console.error('Error fetching images:', error));
+  }, []);
   return (
     <section className={styles.container} id="profile">
       <div className={styles.textcontainer}>

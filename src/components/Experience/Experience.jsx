@@ -14,24 +14,16 @@ export const Experience = () => {
   // Using the useEffect hook to perform a side effect (data fetching) when the component mounts
   useEffect(() => {
       // Making a GET request to the server to fetch items
-      axios.get('http://localhost:3308/skillset')
-          .then(response => {
-              // On successful fetch, update the 'items' state with the fetched data
-              setSkills(response.data);
-          })
-          .catch(error => {
-              // If there is an error during fetch, log it to the console
-              console.error('Error fetching items:', error);
-          });
-          axios.get('http://localhost:3308/experience')
-          .then(response => {
-              // On successful fetch, update the 'items' state with the fetched data
-              setExperience(response.data);
-          })
-          .catch(error => {
-              // If there is an error during fetch, log it to the console
-              console.error('Error fetching items:', error);
-          });
+      fetch('http://localhost:3308/skillset')
+          .then(response => response.json())
+          .then(data => setSkills(data))
+          .catch(error => {console.error('Error fetching items:', error);
+          },
+          fetch('http://localhost:3308/experience')
+          .then(response => response.json())
+          .then(data => setExperience(data))
+          .catch(error => {console.error('Error fetching items:', error);
+          }));
   }, []); // The empty dependency array ensures this effect runs only once after the component mounts
 
   return (

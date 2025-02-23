@@ -25,21 +25,6 @@ db.connect((err) => {
   }
   console.log('Connected to MySQL as ID ' + db.threadId);
 
-
-/*
-  app.get('*.js', (req, res) => {
-    // Set the correct content type for .js files
-    res.setHeader('Content-Type', 'application/javascript');
-    res.sendFile(path.join(__dirname, req.url));
-  });
-
-  app.get('*.jsx', (req, res) => {
-    // Set the correct content type for .jsx files
-    res.setHeader('Content-Type', 'application/javascript');
-    res.sendFile(path.join(__dirname, req.url));
-  });
- */
-
   // Define a route for the root URL '/'
 app.get('/', (req, res) => {
   // Respond with a JSON message
