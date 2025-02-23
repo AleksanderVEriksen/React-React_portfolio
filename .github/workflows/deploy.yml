@@ -31,7 +31,7 @@ jobs:
         run: npm run build  # Adjust this command based on your project setup
 
       - name: Copy build files to public directory
-        run: cp -a build/. public/  # Adjust this if your build output is in a different directory
+        run: cp -a dist/. public/  # Adjust this if your build output is in a different directory
 
       - name: Create CNAME file
         run: echo 'www.aleksanderveriksen.com' > public/CNAME  # Replace with your custom domain
