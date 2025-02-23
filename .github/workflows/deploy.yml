@@ -21,7 +21,7 @@ jobs:
         with:
           node-version: '22.11.0'  # Specify the Node.js version you need
 
-      - name: Check Node.js version
+      - name: Check Node.js version # Check
         run: node -v
 
       - name: Install dependencies # Install
@@ -38,12 +38,13 @@ jobs:
 
       - name: Create CNAME file
         run: echo 'www.aleksanderveriksen.com' > public/CNAME  # Replace with your custom domain
-
+      
+      # Email if fail
       - name: Configure Git
         run: |
-          git config --global user.email "eriksen1998@live.no"
-          git config --global user.name "Aleksander"
-
+          git config --global user.email "eriksen1998@live.no"  
+          git config --global user.name "Aleksander" 
+      # Deploy  
       - name: Deploy to GitHub Pages
         run: |
           git add public
