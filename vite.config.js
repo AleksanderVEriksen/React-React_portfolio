@@ -6,6 +6,9 @@ export default defineConfig({
   // Need base for images
   base: "/React-React_portfolio/",
   plugins: [react()],
+  build: {
+    outDir: 'dist', // Ensure this matches your deploy script
+  },
   css: {
     modules: {
       localsConvention: "camelCase"
