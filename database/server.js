@@ -7,7 +7,7 @@ const cors = require('cors'); // For web security
 
 const app = express();
 
-
+// check jsx
 
 app.use(express.static('public', {
   setHeaders: (res, path) => {
