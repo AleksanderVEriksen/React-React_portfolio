@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react"
 import styles from "./Navbar.module.css"
-import {getImageUrl} from "../../utils";
 
 /* <script src="http://localhost:8097"></script> --  script to react-devtools (command in terminal) */
 
