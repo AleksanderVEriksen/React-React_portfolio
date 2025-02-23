@@ -7,7 +7,7 @@ on:
 
 permissions:
   contents: write  # Allow write access to repository contents
-  
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -24,7 +24,7 @@ jobs:
       - name: Check Node.js version
         run: node -v
 
-      - name: Install dependencies
+      - name: Install dependencies # Install
         run: npm install
 
       - name: List installed packages
