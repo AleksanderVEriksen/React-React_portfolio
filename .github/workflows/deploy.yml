@@ -27,9 +27,6 @@ jobs:
       - name: Install dependencies # Install
         run: npm install
 
-      - name: Install copyfiles # Install
-        run: npm install --save-dev copyfiles
-
       - name: List installed packages
         run: npm list --depth=0
 
@@ -43,7 +40,7 @@ jobs:
         run: echo 'aleksanderveriksen.no' > public/CNAME  # Replace with your custom domain
       
       - name: Copy cv files
-        run: copyfiles mycv.html mycv.css CV-English_new.pdf public/  # Replace with your custom domain
+        run: npx copyfiles mycv.html mycv.css CV-English_new.pdf public/  # Replace with your custom domain
 
       # Email if fail
       - name: Configure Git
