@@ -36,9 +36,6 @@ jobs:
       - name: Copy build files to public directory
         run: cp -a dist/. public/  # Adjust this if your build output is in a different directory
 
-      - name: Copy myCv file to public directory
-        run: cp -a mycv.html. dist/  # Copy mycv.html to build files
-
       - name: Create CNAME file
         run: echo 'aleksanderveriksen.no' > public/CNAME  # Replace with your custom domain
       
