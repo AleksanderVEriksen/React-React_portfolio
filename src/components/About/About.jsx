@@ -1,10 +1,27 @@
 import React, { useState, useRef, useEffect } from "react";
 import styles from "./About.module.css";
-import { getImageUrl } from "../../utils";
-import axios from "axios";
+
+
+const AboutItem = ({ name, image, desc, index }) => {
+  return(
+    <li key={index} className={styles.item}>
+        <img key={index}
+            className={styles.aboutIcons}
+            src={image} alt="">
+        </img>
+        <div className={styles.aboutinfo}>
+          <h3 className={styles.itemTitle}>
+            {name}
+          </h3>
+          <p>
+            {desc}
+          </p>
+        </div>
+    </li>
+      )
+};
 
 export const About = () => {
-
 
   const [about, setAbout] = useState([]);
 
@@ -22,44 +39,53 @@ export const About = () => {
   var code = about.slice() 
   var code_image = code.filter(item => item.idabout == 1)
   var about_ = about.filter(item => item.idabout > 1)
+
+  // For static content
+  const aboutData = [
+    { name: "Python", 
+      image: "/public/assets/about/Python.webp", 
+      desc: "asdsadasd" },
+
+    { name: "Data eng", 
+      image: "/public/assets/about/data-engineering-icon.webp", 
+      desc: "asdasdsadasd" },
+
+    { name: "ML", 
+      image: "/public/assets/about/machine-learning-icon.jpg", 
+      desc: "asdasdasd" },
+
+    { name: "Gym", 
+      image: "/public/assets/about/gym.png", 
+      desc: "sdsadas" },
+    // ... add more skills
+  ];
+
  
   return (
 
     <section className={styles.container} id="about">
       <section className={styles.secleft}>
-        {
-          code_image.map((code, id) =>{return(
-            <div className={styles.codeImagecontainer}>
-            <h2 className={styles.title}> About </h2>
-          <img key={id} className={styles.Codeimage} 
-            src= {(code.image_path)}
+      <div className={styles.codeImagecontainer}>
+        <h2 className={styles.title}> About </h2>
+        <img  className={styles.Codeimage} 
+            src= "\public\assets\about\code_image.jpg"
             alt="image of coding"/>
-            </div>
-            )})
-          }
+      </div>
       </section>
       <div className={styles.content}>
-        <ul className={styles.items}>
-      {
-        about_.map((about, id) =>{
-        return(
-            <li className={styles.item}>
-                <img key={id}
-                    className={styles.aboutIcons}
-                    src={(about.image_path)} alt="">
-                </img>
-                <div className={styles.aboutinfo}>
-                  <h3 className={styles.itemTitle}>
-                    {(about.name)}
-                  </h3>
-                  <p>
-                    {(about.description)}
-                  </p>
-                </div>
-            </li>
-              )})}
-          </ul>
-        </div>
+      <ul className={styles.items}>
+        {
+          aboutData.map((about, index) => (
+          <AboutItem 
+          key={index} 
+          name={about.name} 
+          image={about.image}
+          desc = {about.desc}
+          />
+        ))
+        }
+      </ul>
+      </div>
     </section>
     
 );

@@ -35,6 +35,17 @@ export const Profile = () => {
       src = "public/assets/profile/søknadBilde_grå.png"
       alt="Myimage"
       ></img>
+      {
+      /* For local SQL database
+
+      profile.map((profile, id) =>{
+        return (
+      <img key = {id}  className={styles.myimage} 
+      src = {(profile.image_path)}
+      alt="Myimage"
+      ></img>
+      )})
+      */}
       <div className={styles.topBlur} />
       <div className={styles.bottomBlur} />
     </section>
