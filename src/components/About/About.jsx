@@ -46,11 +46,11 @@ export const About = () => {
       image: "/public/assets/about/Python.webp", 
       desc: "asdsadasd" },
 
-    { name: "Data eng", 
+    { name: "Data engineer", 
       image: "/public/assets/about/data-engineering-icon.webp", 
       desc: "asdasdsadasd" },
 
-    { name: "ML", 
+    { name: "Machine Learning", 
       image: "/public/assets/about/machine-learning-icon.jpg", 
       desc: "asdasdasd" },
 
