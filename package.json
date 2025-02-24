@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && echo 'aleksanderveriksen.no' > dist/CNAME",
+    "build": "vite build && echo 'aleksanderveriksen.no' > dist/CNAME && copy mycv.html dist\\",
     "start": "vite",
     "lint": "eslint .",
     "preview": "vite preview",
