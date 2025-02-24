@@ -39,8 +39,9 @@ jobs:
       - name: Create CNAME file
         run: echo 'aleksanderveriksen.no' > public/CNAME  # Replace with your custom domain
       
-      - name: Copy cv files
-        run: npx copyfiles mycv.html mycv.css CV-English_new.pdf public/  # Copy files to public\
+      - name: Copy CV files to temporary directory # Copy files to temporary directory
+        run: |
+          cp mycv.html mycv.css CV-English_new.pdf public/  
 
       - name: List files in public directory
         run: ls -la public/  # Debugging step to list files
@@ -56,6 +57,13 @@ jobs:
       # Deploy  
       - name: Deploy to GitHub Pages
         run: |
+          
+          # Temporarily remove files from .gitignore
+          sed -i '/mycv.html/d' .gitignore
+          sed -i '/mycv.css/d' .gitignore
+          sed -i '/CV-English_new.pdf/d' .gitignore
+
           git add public
+          git add mycv.html mycv.css CV-English_new.pdf
           git commit -m "Deploy to GitHub Pages" || echo "No changes to commit"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/AleksanderVEriksen/React-React_portfolio.git `git subtree split --prefix public HEAD`:gh-pages --force
