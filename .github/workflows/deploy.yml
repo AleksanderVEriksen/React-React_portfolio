@@ -40,7 +40,10 @@ jobs:
         run: echo 'aleksanderveriksen.no' > public/CNAME  # Replace with your custom domain
       
       - name: Copy cv files
-        run: npx copyfiles mycv.html mycv.css CV-English_new.pdf public/  # Replace with your custom domain
+        run: npx copyfiles mycv.html mycv.css CV-English_new.pdf public/  # Copy files to public\
+
+      - name: List files in public directory
+        run: ls -la public/  # Debugging step to list files
 
       # Email if fail
       - name: Configure Git
