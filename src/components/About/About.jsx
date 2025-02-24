@@ -43,19 +43,19 @@ export const About = () => {
   // For static content
   const aboutData = [
     { name: "Python", 
-      image: "/public/assets/about/Python.webp", 
+      image: "/assets/about/Python.webp", 
       desc: "asdsadasd" },
 
     { name: "Data engineer", 
-      image: "/public/assets/about/data-engineering-icon.webp", 
+      image: "/assets/about/data-engineering-icon.webp", 
       desc: "asdasdsadasd" },
 
     { name: "Machine Learning", 
-      image: "/public/assets/about/machine-learning-icon.jpg", 
+      image: "/assets/about/machine-learning-icon.jpg", 
       desc: "asdasdasd" },
 
     { name: "Gym", 
-      image: "/public/assets/about/gym.png", 
+      image: "/assets/about/gym.png", 
       desc: "sdsadas" },
     // ... add more skills
   ];

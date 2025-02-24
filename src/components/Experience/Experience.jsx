@@ -51,43 +51,43 @@ export const Experience = () => {
 
   // For static content
   const skillsData = [
-    { name: "Python", image: "/public/assets/about/Python.webp" },
-    { name: "Bash", image: "/public/assets/experience/bash.png" },
-    { name: "C", image: "/public/assets/experience/C.png" },
-    { name: "CSS", image: "/public/assets/experience/CSS.png" },
-    { name: "HTML5", image: "/public/assets/experience/HTML5.png" },
-    { name: "Java", image: "/public/assets/experience/Java.png" },
-    { name: "JavaScript", image: "/public/assets/experience/JavaScript.png" },
-    { name: "react", image: "/public/assets/experience/react.png" },
-    { name: "SQL", image: "/public/assets/experience/SQL.png" },
+    { name: "Python", image: "/assets/about/Python.webp" },
+    { name: "Bash", image: "/assets/experience/bash.png" },
+    { name: "C", image: "/assets/experience/C.png" },
+    { name: "CSS", image: "/assets/experience/CSS.png" },
+    { name: "HTML5", image: "/assets/experience/HTML5.png" },
+    { name: "Java", image: "/assets/experience/Java.png" },
+    { name: "JavaScript", image: "/assets/experience/JavaScript.png" },
+    { name: "react", image: "/assets/experience/react.png" },
+    { name: "SQL", image: "/assets/experience/SQL.png" },
     // ... add more skills
   ];
   const experienceData = [
     { role: "Prompt engineer",
       workplace: "Outlier",
       webiste: "Outlier.ai",
-      image: "public/assets/experience/outlier.png", 
+      image: "/assets/experience/outlier.png", 
       date: "Des 23rd 2024 - Now",
       desc: "Create advance prompts to challenge LLM models based on factual correctness regarding code syntax, logic and language. Goal is to make the model learn so that it can surpass current State of the art models" },
 
     { role: "Student assitstant", 
       workplace: "HIOF",
       website: "https://www.hiof.no/",
-      image: "public/assets/experience/hiof.png", 
+      image: "/assets/experience/hiof.png", 
       date: "Jan 1st 2024 - Jun 1st 2024",
       desc: "Assisted students in course Parallel Programming, Java programming, Github & Discord" },
 
     { role: "Student assitstant", 
       workplace: "HIOF",
       website: "https://www.hiof.no/",
-      image: "public/assets/experience/hiof.png", 
+      image: "/assets/experience/hiof.png", 
       date: "Aug 1st 2023 - Dec 1st 2023",
       desc: "Assisted students in course Introduction to OS, C and Bash programming, Github & Discord" },
 
     { role: "Student assitstant", 
       workplace: "HIOF",
       website: "https://www.hiof.no/",
-      image: "public/assets/experience/hiof.png", 
+      image: "/assets/experience/hiof.png", 
       date: "Jan 1st 2022 - Jun 1st 2022",
       desc: "Assisted students in course Parallel Programming, Java programming, Github & Discord" },
   ];
