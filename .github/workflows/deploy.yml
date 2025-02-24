@@ -45,6 +45,9 @@ jobs:
       - name: List files in public directory
         run: ls -la public/  # Debugging step to list files
 
+      - name: Check Git status
+        run: git status
+
       # Email if fail
       - name: Configure Git
         run: |
