@@ -39,15 +39,18 @@ jobs:
       - name: Create CNAME file
         run: echo 'aleksanderveriksen.no' > public/CNAME  # Replace with your custom domain
       
-      - name: Temporarily modify .gitignore
-        run: |
-          sed -i '/mycv.html/d' .gitignore
-          sed -i '/mycv.css/d' .gitignore
-          sed -i '/CV-English_new.pdf/d' .gitignore
+      - name: Create temporary directory for deployment
+        run: mkdir temp-deploy
 
-      - name: Copy CV files to public directory # Copy files to temporary directory
+      - name: Copy CV files to temporary directory
         run: |
-          cp mycv.html mycv.css CV-English_new.pdf public/  
+          cp mycv.html mycv.css CV-English_new.pdf temp-deploy/  # Copy files to temporary directory
+
+      - name: List files in temporary directory
+        run: ls -la temp-deploy/  # Debugging step to list files
+
+      - name: Copy temporary files to public directory
+        run: cp temp-deploy/* public/  # Copy files from temporary directory to public 
 
       - name: List files in public directory
         run: ls -la public/  # Debugging step to list files
