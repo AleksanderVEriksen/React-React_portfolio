@@ -44,7 +44,7 @@ jobs:
 
       - name: Copy CV files to temporary directory
         run: |
-          cp cv_files/mycv.html cv_files/mycv.css cv_files/CV-English_new.pdf temp-deploy/  # Copy files to temporary directory
+          cp cv_files/mycv.html cv_files/mycv.css cv_files/CV-English_github.pdf temp-deploy/  # Copy files to temporary directory
 
       - name: List files in temporary directory
         run: ls -la temp-deploy/  # Debugging step to list files
