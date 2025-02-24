@@ -31,14 +31,10 @@ export const Profile = () => {
           Contact me
         </a>
       </div>
-      {
-      profile.map((profile, id) =>{
-        return (
-      <img key = {id}  className={styles.myimage} 
-      src = {(profile.image_path)}
+      <img  className={styles.myimage} 
+      src = "public/assets/profile/søknadBilde_grå.png"
       alt="Myimage"
       ></img>
-      )})}
       <div className={styles.topBlur} />
       <div className={styles.bottomBlur} />
     </section>
