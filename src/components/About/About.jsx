@@ -5,14 +5,15 @@ import styles from "./About.module.css";
 const AboutItem = ({ name, image, desc, index }) => {
   return(
     <li key={index} className={styles.item}>
-        <img key={index}
+        
+        <div className={styles.aboutinfo}>
+        <h3 className={styles.itemTitle}>
+          <img key={index}
             className={styles.aboutIcons}
             src={image} alt="">
         </img>
-        <div className={styles.aboutinfo}>
-          <h3 className={styles.itemTitle}>
-            {name}
-          </h3>
+              {name}
+            </h3>
           <p>
             {desc}
           </p>
@@ -56,7 +57,7 @@ export const About = () => {
 
     { name: "Gym", 
       image: "/assets/about/gym.png", 
-      desc: "sdsadas" },
+      desc: "sdsadas sajhdjsahdj sadj sadhiashduashdisah idasidaishfa shasidhsaudhasihd iauhsd" },
     // ... add more skills
   ];
 
@@ -64,14 +65,14 @@ export const About = () => {
   return (
 
     <section className={styles.container} id="about">
-      <section className={styles.secleft}>
+      <div className={styles.secleft}>
       <div className={styles.codeImagecontainer}>
         <h2 className={styles.title}> About </h2>
         <img  className={styles.Codeimage} 
             src= "/assets/about/code_image.jpg"
             alt="image of coding"/>
       </div>
-      </section>
+      </div>
       <div className={styles.content}>
       <ul className={styles.items}>
         {

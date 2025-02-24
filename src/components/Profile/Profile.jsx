@@ -27,9 +27,14 @@ export const Profile = () => {
           culpa! Labore iste minus minima accusantium tempore. Voluptas placeat
           inventore eaque.
         </p>
+        <div className={styles.ProfileButtons}>
         <a className={styles.contactbtn} href="mailto:eriksen1998@live.no">
-          Contact me
+          Contact me via email
         </a>
+        <a href = "mycv.html" className={styles.contactbtn} target="_blank">
+          My CV
+        </a>
+        </div>
       </div>
       <img  className={styles.myimage} 
       src = "/assets/profile/søknadBilde_grå.png"

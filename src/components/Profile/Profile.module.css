@@ -54,6 +54,12 @@
 
 .contactbtn:hover{
     text-decoration: underline;
+    cursor: pointer;
+}
+
+.ProfileButtons{
+    display: flex;
+    gap: 20px;
 }
 
 .myimage{
@@ -110,7 +116,7 @@
         flex-direction: column-reverse;
     }
     .textcontainer{
-        align-items: center;
+        align-items: flex-start;
     }
     .myimage{
         width: 50%;

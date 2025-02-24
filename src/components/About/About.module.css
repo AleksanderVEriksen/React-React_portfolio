@@ -16,8 +16,8 @@
 }
 
 .codeImagecontainer{
-    margin-top: -40%;
-    margin-right: -40%;
+    margin-top: 0;
+    margin-right: -50%;
 }
 
 .title{
@@ -40,18 +40,26 @@
 
 .itemTitle{
     font-size: 24px;
+    display: flex;
+    align-items: center;
 }
 
 .item{
     flex-direction: row;
     list-style: none;
+    
     margin-bottom: 5%;
     margin: 5% 5% 5% 0;    /* Top right bottom left */
 }
 
 .aboutIcons{
-    width: 30%;
+    display: flex;
+    width: 20%;
+    float: left;
+    margin-right: 5px;
+    align-self: flex-start;
 }
+
 
 .aboutinfo p:hover{
     background-color: var(--color-dark);
@@ -60,6 +68,7 @@
 .aboutinfo p{
     margin-top: 2%;
     font-size: 18px;
+    overflow: auto;
 }
 
 @media screen  and (max-width: 830px) {
@@ -78,5 +87,6 @@
     .items{
         margin-left: 5%;
     }
+    
     
 }
