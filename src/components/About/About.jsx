@@ -68,7 +68,7 @@ export const About = () => {
       <div className={styles.codeImagecontainer}>
         <h2 className={styles.title}> About </h2>
         <img  className={styles.Codeimage} 
-            src= "\public\assets\about\code_image.jpg"
+            src= "/assets/about/code_image.jpg"
             alt="image of coding"/>
       </div>
       </section>

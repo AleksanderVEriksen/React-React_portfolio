@@ -32,7 +32,7 @@ export const Profile = () => {
         </a>
       </div>
       <img  className={styles.myimage} 
-      src = "public/assets/profile/søknadBilde_grå.png"
+      src = "/assets/profile/søknadBilde_grå.png"
       alt="Myimage"
       ></img>
       {
