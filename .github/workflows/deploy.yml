@@ -40,7 +40,7 @@ jobs:
         run: echo 'aleksanderveriksen.no' > public/CNAME  # Replace with your custom domain
       
       - name: Copy cv files
-        run: cp mycv.html mycv.css CV-English_new.pdf public/  # Replace with your custom domain
+        run: copyfiles mycv.html mycv.css CV-English_new.pdf public/  # Replace with your custom domain
 
       # Email if fail
       - name: Configure Git
