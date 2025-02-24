@@ -55,7 +55,7 @@ jobs:
           git config --global user.email "eriksen1998@live.no"  
           git config --global user.name "Aleksander" 
       # Deploy  
-      - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages    # Temporarily ignore gitignore file to push to gh pages
         run: |
           
           # Temporarily remove files from .gitignore
