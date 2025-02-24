@@ -44,7 +44,7 @@ jobs:
 
       - name: Copy CV files to temporary directory
         run: |
-          cp mycv.html mycv.css CV-English_new.pdf temp-deploy/  # Copy files to temporary directory
+          cp cv_files/mycv.html cv_files/mycv.css cv_files/CV-English_new.pdf temp-deploy/  # Copy files to temporary directory
 
       - name: List files in temporary directory
         run: ls -la temp-deploy/  # Debugging step to list files
@@ -67,6 +67,5 @@ jobs:
       - name: Deploy to GitHub Pages   
         run: |
           git add public/
-          git add mycv.html mycv.css CV-English_new.pdf
           git commit -m "Deploy to GitHub Pages" || echo "No changes to commit"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/AleksanderVEriksen/React-React_portfolio.git `git subtree split --prefix public HEAD`:gh-pages --force
