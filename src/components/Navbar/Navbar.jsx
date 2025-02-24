@@ -34,6 +34,15 @@ export const Navbar = () => {
             .catch(error => {console.error('Error fetching items:', error)});
     }, []); // The empty dependency array ensures this effect runs only once after the component mounts
 
+
+
+    const navItems = [
+    { name: "bar", image: "/assets/nav/bar.png" },
+    { name: "delete", image: "/assets/nav/delete.png" },
+    ];
+
+
+
     return (
         <nav className={styles.navbar}> 
             <a className={styles.title} 
@@ -41,14 +50,14 @@ export const Navbar = () => {
                 >
                 Portfolio</a>  
                 <div className={styles.menu}>
-                {nav.length >= 2 && (
+                { 
                     <img
                         className={styles.menubtn}
-                        src={menuOpen ? nav[1].image_path : nav[0].image_path}
+                        src={menuOpen ? navItems[1].image : navItems[0].image}
                         alt="menu-button"
                         onClick={() => setMenuOpen(!menuOpen)}
                     />
-                    )}
+                    }
                     <ul className={`${styles.menuitems} ${menuOpen && styles.menuOpen}`}
                             onClick={() => setMenuOpen(false)}>
                         <li>
