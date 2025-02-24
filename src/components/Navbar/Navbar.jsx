@@ -41,7 +41,7 @@ export const Navbar = () => {
     { name: "delete", image: "/assets/nav/delete.png" },
     ];
 
-
+    // Need to add button to naviage to my CV in pdf format
 
     return (
         <nav className={styles.navbar}> 
