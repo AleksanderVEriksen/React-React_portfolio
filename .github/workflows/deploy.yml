@@ -27,6 +27,9 @@ jobs:
       - name: Install dependencies # Install
         run: npm install
 
+      - name: Install copyfiles # Install
+        run: npm install --save-dev copyfiles
+
       - name: List installed packages
         run: npm list --depth=0
 
