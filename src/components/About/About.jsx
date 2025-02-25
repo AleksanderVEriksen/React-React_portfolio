@@ -45,20 +45,20 @@ export const About = () => {
   const aboutData = [
     { name: "Python", 
       image: "/assets/about/Python.webp", 
-      desc: "asdsadasd" },
+      desc: "Why i like Python" },
 
     { name: "Data engineer", 
       image: "/assets/about/data-engineering-icon.webp", 
-      desc: "asdasdsadasd" },
+      desc: "Why i think Data engineering is interesting" },
 
     { name: "Machine Learning", 
       image: "/assets/about/machine-learning-icon.jpg", 
-      desc: "asdasdasd" },
+      desc: "What i think of Machine learning" },
 
     { name: "Gym", 
       image: "/assets/about/gym.png", 
-      desc: "sdsadas sajhdjsahdj sadj sadhiashduashdisah idasidaishfa shasidhsaudhasihd iauhsd" },
-    // ... add more skills
+      desc: " What i like to do in my free time" },
+    
   ];
 
  

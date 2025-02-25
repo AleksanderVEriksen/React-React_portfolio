@@ -11,10 +11,8 @@ export const Projects = () => {
           <ul>
             <li>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. In,
-                doloremque. Recusandae cumque quasi ut neque doloribus voluptate
-                aspernatur beatae mollitia excepturi, nostrum ad, unde in necessitatibus
-                eius, fuga officia ipsum?
+                This is a list of Github projects I liked the most working with,
+                 and is relevant to what i am interested in.
               </p>
             </li>
           </ul>

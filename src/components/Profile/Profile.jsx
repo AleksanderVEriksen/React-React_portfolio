@@ -22,10 +22,12 @@ export const Profile = () => {
       <div className={styles.textcontainer}>
         <h1 className={styles.title}> Hello im Aleksander</h1>
         <p className={styles.description}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-          magni sed quisquam quasi iste veritatis aliquid earum tempore deserunt
-          culpa! Labore iste minus minima accusantium tempore. Voluptas placeat
-          inventore eaque.
+          I am a coding expert with a Master degree in applied CS, and a Bachelor degree in informatics from HIOF, halden. 
+          I am passioned about analytical and diffficult tasks, 
+          because then i can challenge my mind and learn how to approach the task in order to achieve 
+          the best result. I am very stubborn when im stuck at something, and always do my best in order 
+          to solve it. The areas I like most about coding is Machine learning & AI, Data engineering and 
+          object oriented programming.  
         </p>
         <div className={styles.ProfileButtons}>
         <a className={styles.contactbtn} href="mailto:eriksen1998@live.no">
