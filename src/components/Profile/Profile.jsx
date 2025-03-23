@@ -20,12 +20,12 @@ export const Profile = () => {
   return (
     <section className={styles.container} id="profile">
       <div className={styles.textcontainer}>
-        <h1 className={styles.title}> Hello im Aleksander</h1>
+        <h1 className={styles.title}> Hello Im Aleksander</h1>
         <p className={styles.description}>
-          I am a coding expert with a Master degree in applied CS, and a Bachelor degree in informatics from HIOF, halden. 
-          I am passioned about analytical and diffficult tasks, 
+          I am a coding expert with a Master degree in Applied Computer Science, and a Bachelor degree in informatics from HIOF, Halden. 
+          My passion involves analytical and difficult tasks, 
           because then i can challenge my mind and learn how to approach the task in order to achieve 
-          the best result. I am very stubborn when im stuck at something, and always do my best in order 
+          the best result. I am very stubborn when stuck at something, and always do my best in order 
           to solve it. The areas I like most about coding is Machine learning & AI, Data engineering and 
           object oriented programming.  
         </p>
