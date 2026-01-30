@@ -1,0 +1,14 @@
+html {
+    height: 100%; /* Make the html element take up the full viewport height */
+  }
+  
+  body {
+    height: 100vh; /* Make the body element take up the full viewport height */
+    margin: 0; /* Remove default body margin */
+  }
+  
+  object {
+    display: block; /* Make the object element a block-level element */
+    height: 100%; /* Make the object element take up the full height of its parent */
+    width: 100%; /* Make the object element take up the full width of its parent */
+  }
