@@ -9,7 +9,7 @@ export const Projects = () => {
     {
       id: 1,
       title: "Text-to-Image",
-      link: "https://github.com/AleksanderVEriksen/text-to-image",
+      link: "https://github.com/AleksanderVEriksen/Text_to_image",
       description:
         "A self created text-to-image generation project using deep learning techniques.",
       image: null,
@@ -20,12 +20,12 @@ export const Projects = () => {
       link: "https://github.com/AleksanderVEriksen/QA_bot.py",
       description:
         "A chatbot built with LangChain and Retrieval-Augmented Generation (RAG) techniques.",
-      image: null,
+      image: "projects/Chatbot.png",
     },
     {
       id: 3,
       title: "Portfolio Website",
-      link: "https://github.com/AleksanderVEriksen/React-React-Portfolio",
+      link: "https://github.com/AleksanderVEriksen/React-React_portfolio",
       description:
         "Personal site built with React + Vite. Features responsive design, lazy-loaded routes, and CI/CD.",
       image: null,
