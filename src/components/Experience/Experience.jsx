@@ -58,14 +58,14 @@ export const Experience = () => {
     { name: "HTML5", image: "/assets/experience/HTML5.png" },
     { name: "Java", image: "/assets/experience/Java.png" },
     { name: "JavaScript", image: "/assets/experience/JavaScript.png" },
-    { name: "react", image: "/assets/experience/react.png" },
+    { name: "React", image: "/assets/experience/react.png" },
     { name: "SQL", image: "/assets/experience/SQL.png" },
     // ... add more skills
   ];
   const experienceData = [
     { role: "Prompt engineer",
       workplace: "Outlier",
-      webiste: "Outlier.ai",
+      website: "https://outlier.ai",
       image: "/assets/experience/outlier.png", 
       date: "Des 23rd 2024 - Now",
       desc: "Create advance prompts to challenge LLM models based on factual correctness regarding code syntax, logic and language. Goal is to make the model learn so that it can surpass current State of the art models" },

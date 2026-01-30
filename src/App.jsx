@@ -12,7 +12,6 @@ function App() {
   <div className={styles.App}> 
   <Navbar />
   <Profile />
-  <About />
   <Experience />
   <Projects />
   <Footer />

@@ -8,32 +8,22 @@
     justify-content: space-evenly;
     z-index: 1; 
     flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .container h2{
-    margin-left: 5%;
-    font-size: 36px;
+    font-size: 18px;
 }
 
-.secleft{
-    margin-left: 5%;
-    display: flex;  
-}
-
-.title{
-    text-transform: uppercase;
-    font-size: 36px;
-    margin-bottom: 5%;
-}
 
 .items{
-    display: flex;
-    flex-direction: row; 
     list-style: none;
-    align-items: baseline;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 2%;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 10px;
+    row-gap: 6px;
+    margin: 2% 0 2% 0;
     width: 50%;
 }
 
@@ -51,7 +41,7 @@
 }
 
 .itemTitle{
-    font-size: 18px;
+    font-size: 12px;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -79,21 +69,25 @@
 
 .historyItem{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    background-color: #19376d;
-    background: linear-gradient(90deg, #19376d 0%, rgba(25,55,109,0)100%);
+    flex-direction:row;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #162849;
     border-radius: 10px;
     padding: 25px;
 }
 
 .historyItem a{
-    width: 20%;
-    margin-right: 10px;
+    width: 180px;
+    display: block;
 }
 
 .historyItem a img{
-    width: 80%;  
+    width: 40%;
+    height: auto;
+    display: block;
 }
 
 .historyItem a img:hover{
@@ -105,6 +99,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     gap: 5px;
+    width: 100%;
     
 }
 
@@ -114,21 +109,24 @@
 }
 
 .historyItemDetail h3{
-    font-size: 30px;
+    font-size: 12px;
     font-weight: 500;
+    overflow-wrap: anywhere;
     
 }
 
 .historyItemDetail p{
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 300;
+    overflow-wrap: anywhere;
 }
 
 .historyItemDetail ul{
     list-style-position: inside;
     margin-top: 6px;
-    font-size: 18px;
+    font-size: 11px;
     list-style-type: disc;
+    overflow-wrap: anywhere;
 }
 
 @media screen  and (min-width: 830px) and (max-width: 1400px) {

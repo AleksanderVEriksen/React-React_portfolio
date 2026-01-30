@@ -45,33 +45,33 @@ export const About = () => {
   const aboutData = [
     { name: "Python", 
       image: "/assets/about/Python.webp", 
-      desc: "Why i like Python" },
+      desc: `Python is one of my most used programming languages.
+              I think the framework is simple to work with,
+              both for developing and for analytical approaches.
+              Ive used it most for developing ML solutions as well as testing/learning AI frameworks.` },
 
     { name: "Data engineer", 
       image: "/assets/about/data-engineering-icon.webp", 
-      desc: "Why i think Data engineering is interesting" },
+      desc: `Working with Data and be able to produce something valuable is a big part of what I enjoy.
+            All parts from getting the data, the start of cleaning and understanding the data, to feature engineering/extraction, 
+            and then applying the finished data to production.` },
 
     { name: "Machine Learning", 
       image: "/assets/about/machine-learning-icon.jpg", 
-      desc: "What i think of Machine learning" },
+      desc: `I was first introduced to ML at my second year of my bachelor studies. I learn different way of working with ML frameworks such as
+            analysis, prediction, classification and detection. You can develop models to learn simple data, or go further by using Deep learning for more advance usecases. 
+            I think it is a great technical domain to utilize and work with.` },
 
     { name: "Gym", 
       image: "/assets/about/gym.png", 
-      desc: " What i like to do in my free time" },
+      desc: `Gym is one of my favorite activities to stay healthy and fit. I enjoy working out regularly and challenging myself to improve my strength and endurance.` },
     
   ];
 
- 
   return (
 
     <section className={styles.container} id="about">
       <div className={styles.secleft}>
-      <div className={styles.codeImagecontainer}>
-        <h2 className={styles.title}> About </h2>
-        <img  className={styles.Codeimage} 
-            src= "/assets/about/code_image.jpg"
-            alt="image of coding"/>
-      </div>
       </div>
       <div className={styles.content}>
       <ul className={styles.items}>
