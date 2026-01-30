@@ -12,7 +12,7 @@ export const Projects = () => {
       link: "https://github.com/AleksanderVEriksen/text-to-image",
       description:
         "A self created text-to-image generation project using deep learning techniques.",
-      image: "/assets/projects/text-to-image.jpg",
+      image: null,
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ export const Projects = () => {
       link: "https://github.com/AleksanderVEriksen/QA_bot.py",
       description:
         "A chatbot built with LangChain and Retrieval-Augmented Generation (RAG) techniques.",
-      image: "/assets/projects/ml-serving.jpg",
+      image: null,
     },
     {
       id: 3,
@@ -28,6 +28,14 @@ export const Projects = () => {
       link: "https://github.com/AleksanderVEriksen/React-React-Portfolio",
       description:
         "Personal site built with React + Vite. Features responsive design, lazy-loaded routes, and CI/CD.",
+      image: null,
+    },
+    {
+      id: 4,
+      title: "Anomaly Detection",
+      link: "https://github.com/AleksanderVEriksen/anomaly_detection",
+      description:
+        "Project worked during my master thesis. Self created preprocessing framework that works on UNSW-NB15, TON-IOT and BoT-IoT datasets. Evaluated seven different ML algorithms for anomaly detection.",
       image: null,
     },
   ];
