@@ -61,9 +61,6 @@ export const Navbar = () => {
                     <ul className={`${styles.menuitems} ${menuOpen && styles.menuOpen}`}
                             onClick={() => setMenuOpen(false)}>
                         <li>
-                            <a href="#profile">Contact me</a> 
-                        </li>
-                        <li>
                             <a href="#about">About</a>   
                         </li>
                         <li>

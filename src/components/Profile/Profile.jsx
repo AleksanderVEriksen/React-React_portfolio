@@ -78,7 +78,7 @@ export const Profile = () => {
       .catch(error => console.error('Error fetching images:', error));
   }, []);
   return (
-    <section className={styles.container} id="profile">
+    <section className={styles.container} id="about">
       <div className={styles.heading}>
         <div className={styles.myimagecontainer}>
           <img  className={styles.myimage} 
