@@ -3,9 +3,15 @@
 const express = require('express'); // HTTP requests
 const mysql = require('mysql'); // Database
 const cors = require('cors'); // For web security
-
+const RateLimit = require('express-rate-limit');
 
 const app = express();
+
+// Rate limiter for routes that access the database
+const dbLimiter = RateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // limit each IP to 100 requests per windowMs for DB-heavy routes
+});
 
 // check jsx files
 
@@ -45,7 +51,7 @@ app.get('/', (req, res) => {
   return res.json("From backend side");
 });
 
-app.get('/nav', (req, res) => {
+app.get('/nav', dbLimiter, (req, res) => {
   const sql = "select * from my_db.nav"; // SQL query to select all items
   
   db.query(sql, (err, data) => { // Execute the SQL query
@@ -54,7 +60,7 @@ app.get('/nav', (req, res) => {
   })
 });
 
-app.get('/profile', (req, res) => {
+app.get('/profile', dbLimiter, (req, res) => {
   const sql = "select * from my_db.profile"; // SQL query to select all items
   
   db.query(sql, (err, data) => { // Execute the SQL query
@@ -64,7 +70,7 @@ app.get('/profile', (req, res) => {
 });
 
 
-app.get('/about', (req, res) => {
+app.get('/about', dbLimiter, (req, res) => {
   const sql = "select * from my_db.about"; // SQL query to select all items
   
   db.query(sql, (err, data) => { // Execute the SQL query
@@ -74,7 +80,7 @@ app.get('/about', (req, res) => {
 });
 
 
-app.get('/experience', (req, res) => {
+app.get('/experience', dbLimiter, (req, res) => {
   const sql = "select * from my_db.experience"; // SQL query to select all items
   
   db.query(sql, (err, data) => { // Execute the SQL query
@@ -84,7 +90,7 @@ app.get('/experience', (req, res) => {
 });
 
 // Define a route to fetch all items from the 'items' table
-app.get('/skillset', (req, res) => {
+app.get('/skillset', dbLimiter, (req, res) => {
   const sql = "select * from my_db.skillset"; // SQL query to select all items
   db.query(sql, (err, data) => { // Execute the SQL query
       if (err) return res.json(err); // If there's an error, return the error
@@ -92,7 +98,7 @@ app.get('/skillset', (req, res) => {
   })
 });
 
-app.get('/projects', (req, res) => {
+app.get('/projects', dbLimiter, (req, res) => {
   const sql = "select * from my_db.projects"; // SQL query to select all items
   db.query(sql, (err, data) => { // Execute the SQL query
       if (err) return res.json(err); // If there's an error, return the error
